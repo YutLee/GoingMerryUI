@@ -1,0 +1,118 @@
+Going Merry UI（黄金梅丽号 -- 名字由来,漫画《ONE PIECE》中草帽海贼团第一艘船的名字）
+
+-- Framework
+
+	-- Drag & Drop 拖放
+	
+	-- Effects 效果
+
+-- widgets
+
+	-- AutoComplete 自动补全（完成）
+	
+	-- Calendar 日历
+
+	-- ColorPicker 颜色选择器
+
+	-- ComboBox 组合框
+
+	-- DatePicker 日期选择器
+
+	-- DropDownList 下拉列表
+
+	-- Editor 编辑器
+
+	-- Grid	格子（表格）
+
+	-- ListView 列表视图
+
+	-- Menu 菜单
+
+	-- MultiSelect (下拉)多选
+
+	-- NumericTextBox 数字文本框
+
+	-- PanelBar 面板栏
+
+	-- Slider 滑块  
+
+	-- Splitter 分离器（分隔条）
+
+	-- TabStrip 标签栏（选项卡）
+
+	-- TimePicker 时间选择器
+
+	-- Tooltip 工具提示
+
+	-- TreeView 树视图
+
+	-- Window （弹出）窗口
+	
+	
+Task（任务）2013.11.6~2013.12.31
+
+-- 3周内完成任务
+
+	-- Framework
+
+		-- Drag & Drop 拖放	--> 11.6~11.7
+
+	-- widgets
+
+		-- Grid	格子（表格） --> 11.13~11.15
+
+		-- Slider 滑块  --> 11.8
+
+		-- Splitter 分离器（分隔条） --> 11.11~11.12
+
+		-- TabStrip 标签栏（选项卡） --> 11.22
+
+		-- Tooltip 工具提示  --> 11.18
+
+		-- Window （弹出）窗口 --> 11.19~11.21
+
+-- 4~5周内完成任务
+
+	-- widgets
+		
+		-- AutoComplete 自动补全（完成） --> 12.2~12.3
+
+		-- ComboBox 组合框  --> 11.27
+
+		-- DropDownList 下拉列表  --> 11.25~11.26
+
+		-- MultiSelect (下拉)多选  --> 11.29
+
+		-- NumericTextBox 数字文本框  --> 11.28
+
+-- 5~6周内完成任务
+
+	-- widgets
+
+		-- ListView 列表视图 --> 12.4
+
+		-- Menu 菜单 --> 12.5~12.6
+
+		-- PanelBar 面板栏 --> 12.9
+
+		-- TreeView 树视图 --> 12.10~12.11
+	
+-- 8周内完成任务
+
+	-- widgets
+		
+		-- Calendar 日历  --> 12.12~12.13
+
+		-- ColorPicker 颜色选择器  --> 12.19~12.20
+
+		-- DatePicker 日期选择器  --> 12.16~12.17
+
+		-- TimePicker 时间选择器 --> 12.18
+		
+		-- Editor 编辑器 --> 12.23~12.25
+	
+	-- Framework
+	
+		-- Effects 效果 --> 12.26~12.27
+		
+		-- 将效果添加到各个组件中 --> 12.30~12.31

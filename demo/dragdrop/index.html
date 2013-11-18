@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" />
+		<title>Going Merry UI</title>
+		<link rel="stylesheet" href="../shared/css/demo.css" />
+		<link rel="stylesheet" href="../../css/gm.default.css" />
+		<script src="../../src/jquery-1.8.3.min.js"></script>
+		<script src="../../src/gm.core.js"></script>
+		<script src="../../src/gm.draganddrop.js"></script>
+		<style>
+			.drag{position:absolute;top:0;left:0;padding:10px;border:1px solid #000;cursor:default;background:#eee;}
+		</style>
+	</head>
+	<body>
+		<a class="offline-button" href="../index.html">Back</a>
+		<div id="demo"  style="position:relative;height:500px;">
+			<div class="drag">drag me x</div>
+			<div class="drag">drag me y</div>
+			<div class="drag">
+				<h1>title</h1>
+				drag me
+			</div>
+		</div>
+		<script>
+			$('.drag').eq(0).gmDraggable({axis: 'x'});
+			$('.drag').eq(1).gmDraggable({axis: 'y'});
+			$('.drag:last').gmDraggable({filter: 'h1', container: '#demo', dragstart: function(e) {
+				console.log(e);
+			}});
+		</script>
+	</body>
+</html>

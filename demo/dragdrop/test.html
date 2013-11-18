@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" />
+		<title>Going Merry UI</title>
+		<link rel="stylesheet" href="../shared/css/demo.css" />
+		<link rel="stylesheet" href="../../css/gm.default.css" />
+		<script src="../../src/jquery-1.8.3.min.js"></script>
+	</head>
+	<body style="position:relative;padding:100px;">
+		<a class="offline-button" href="../index.html">Back</a>
+		<div id="demo" style="">
+			<div class="dm" style="position:absolute;top:0;left:0;padding:10px;border:1px solid #000;margin:100px;">drag me</div>
+		</div>
+		<script>
+			var dm = $('.dm');
+			console.log($('.dm').offset());
+			console.log(dm.offsetParent().offset());
+			var dragging = false,dropped = false, oft, offset;
+			dm.bind({
+				'mousedown': function(e) {
+					console.log(e.pageX, e.pageY);
+					dragging = true;
+					oft = {
+						top: e.pageY - dm.offset().top + parseInt(dm.css('margin-top'), 10) + dm.offsetParent().offset().top,
+						left: e.pageX - dm.offset().left + parseInt(dm.css('margin-left'), 10) + dm.offsetParent().offset().left
+					};
+				},
+				
+			});
+			$(document).bind({
+				'mousemove': function(e) {
+					if(dragging) {
+						console.log(e.pageX, e.pageY);
+						offset = {
+							top: e.pageY - oft.top,
+							left: e.pageX - oft.left
+						};
+						dm.css(offset);
+					}
+				},
+				'mouseup': function() {
+					dragging = false;
+				}
+			});
+		</script>
+	</body>
+</html>
