@@ -171,7 +171,7 @@
 		_position: function() {
 			var that = this,
 				offset = that.target.offset(),
-				width = that.target.outerWidth() - parseInt(that.popup.css('border-left'), 10) * 2,
+				width = that.target.outerWidth() - parseInt(that.popup.css('border-left-width'), 10) * 2,
 				top = offset.top + that.target.outerHeight(),
 				pos;
 				
