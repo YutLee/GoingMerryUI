@@ -75,7 +75,7 @@
 			}).bind('blur' + NS, function(e) {
 				isNotBlur = false;
 			});
-			
+
 			element.bind('focus' + NS, function(e) {
 				that.target.addClass(STATEFOCUSED);
 				that.olderText = $(this).val();
@@ -141,6 +141,10 @@
 					that.close();
 				}
 			});
+			
+			if(that.options.index >= 0) {
+				item.eq(that.options.index).click();
+			}
 		},
 		options: {
 			name: 'ComboBox',
